@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --blue:rgb(5, 25, 117);
+    --lila: rgb(227, 202, 233);
+    --gray:rgb(227, 202, 233);
+}
+body{font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    background-color: 
+}
+h1, h2, h3{
+    color: var(--blue);
+    font-weight: bolder;
+}
+header{
+    background-color: rgb(227, 202, 233);
+    padding: 20px;
+}
+footer{
+    
+    background-color: var(--blue);
+    height: 3rem;
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+i{
+    font-size: 40px;
+
+}
+img{
+    border-radius: 50%;
+}
+.cabecera{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: auto auto auto;
+    
+}
+.foto{
+    grid-row: 1/3;
+    margin-top: 12px;
+    margin-left: 50px;
+    margin-right: 20PX;
+
+}
+.foto img{
+    width: 100%;
+}
+.contenido{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+.nombre{
+    margin-top: 40PX;
+}
+.nombre h1{
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+}
+.educacion{
+    border: 1px solid gray;
+    margin-top: 30px;
+    padding: 30px;
+}
+.experiencia{
+    border: 1px solid gray;
+    margin-top: 30px;
+    padding: 30px;
+}
+.habilidades{
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+.habilidades{
+    background-color: var(--lila);
+    margin-top: 1em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+@media screen and (max-width:700px){
+    .cabecera{
+        width: 100%;
+        padding: 10px 5px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        text-align: center;
+    }
+    .contenido{
+        
+        display: grid;
+        grid-template-columns: auto;
+      
+        justify-content:center;
+    }
+    .foto img{
+        width: 50%;
+    }
+    .foto{
+       margin: 20px 5px;
+    }
+}
+@media screen and (max-width:1024px){
+    .contenido{
+        
+        display: grid;
+        grid-template-columns: auto;
+      
+        justify-content:center;
+    }
+    .educacion{
+        border: 1px solid gray;
+        margin-top: 30px;
+        padding: 5px;
+    }
+    .experiencia{
+        border: 1px solid gray;
+        margin-top: 30px;
+        padding: 5px;
+    }
+    header{
+        
+        padding: 10px;
+    }
+}
